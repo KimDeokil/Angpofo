@@ -1,8 +1,13 @@
-<div>
-    <mat-toolbar color="primary">
-        <button>
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span>My App</span>
-    </mat-toolbar>
+<div class="toolbar">
+    <button mat-icon-button (click)="sidebar()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+</div>
+
+<div class="sidebar" *ngIf="sidebarYN">
+   <li><a href="#">MENU1</a></li>
+   <li><a href="#">MENU2</a></li>
+   <li><a href="#">MENU3</a></li>
+   <li><a href="#">MENU4</a></li>
 </div>

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  public sidebarYN: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public sidebar() {
+    this.sidebarYN = !this.sidebarYN;
   }
 
 }
